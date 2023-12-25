@@ -130,8 +130,11 @@ const getConfettiStyle = (n: number) => ({
  */
 const giftCard = computed(() => {
   const currUrl = window.location.href
-  const pathSegments = currUrl.split('/')
-  return pathSegments[pathSegments.length - 1]
+  const urlObj = new URL(currUrl)
+  const params = urlObj.searchParams
+  for (let value of params.values())
+    return value
+  return ''
 })
 
 onMounted(() => {
