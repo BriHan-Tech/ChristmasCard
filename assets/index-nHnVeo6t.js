@@ -8876,7 +8876,7 @@ $bm_rt = eval(['@JSXBIN@ES@2.0@MyBbyBn0AEJAnABjzBjWBfXzFjWjBjMjVjFCfjzMjUjIjJjTi
     ],
     markers = [],
     merryChristmas = { v, fr, ip, op, w, h, nm, ddd, assets, layers, markers },
-    _withScopeId = (e) => (pushScopeId('data-v-d5c942a0'), (e = e()), popScopeId(), e),
+    _withScopeId = (e) => (pushScopeId('data-v-7cde79c4'), (e = e()), popScopeId(), e),
     _hoisted_1 = { class: 'absolute top-0 left-0 w-full h-full overflow-hidden' },
     _hoisted_2 = { class: 'w-full h-full flex flex-col justify-center items-center' },
     _hoisted_3 = {
@@ -9194,8 +9194,10 @@ $bm_rt = eval(['@JSXBIN@ES@2.0@MyBbyBn0AEJAnABjzBjWBfXzFjWjBjMjVjFCfjzMjUjIjJjTi
             backgroundColor: _()
           }),
           A = computed(() => {
-            const g = window.location.href.split('/')
-            return g[g.length - 1]
+            const d = window.location.href,
+              C = new URL(d).searchParams
+            for (let P of C.values()) return P
+            return ''
           })
         return (
           onMounted(() => {
@@ -9411,7 +9413,7 @@ $bm_rt = eval(['@JSXBIN@ES@2.0@MyBbyBn0AEJAnABjzBjWBfXzFjWjBjMjVjFCfjzMjUjIjJjTi
       for (const [i, n] of t) r[i] = n
       return r
     },
-    App = _export_sfc$1(_sfc_main$1, [['__scopeId', 'data-v-d5c942a0']])
+    App = _export_sfc$1(_sfc_main$1, [['__scopeId', 'data-v-7cde79c4']])
   var commonjsGlobal =
     typeof globalThis < 'u'
       ? globalThis
